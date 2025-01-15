@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>Hoja de Estilo</title>
+    <link rel="icon" type="image.jfif" href="file:///C:/Users/FALCONI%20PC5/Pictures/Saved%20Pictures/imagen%20de%20visual%20%20fox%20pro.jfif"/>
+    <meta name="description" content="Para poder hacer una PAGINA con hojas de Estilo necesitas saber qué son las hojas de estilo. Las hojas de estilo son archivos que acompañan al archivo principal de cualquier página web, con la extensión css, y se encargan de definir diferentes aspectos relacionados con el formato y el diseño de la web"/>
+    <style>
+      body { background: linear-gradient(to right, #1481A1, #0D62A1); color: #000000; }
+    </style>
+ </head>
+ <body>
+  <header>
+    <img src="file:///C:/Users/FALCONI%20PC5/Pictures/Saved%20Pictures/imagen%20de%20visual%20%20fox%20pro.jfif" width="70" alt="Logotipo">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            display: flex;
+            flex-direction: column;
+            width: 3rem;
+            height: 3rem;
+            border: 0;
+            background: transparent;
+            gap: .65rem;
+            cursor: pointer;
+        }
+        button > div {
+            background: black;
+            height: 2px;
+            width: 100%;
+            border-radius: 5px;
+            transition: all .5s;
+            transform-origin: left;
+        }
+        button.open div:first-child {
+            transform: rotate(45deg);
+        }
+        button.open div:nth-child(2) {
+            opacity: 0;
+        }
+        button.open div:last-child {
+            transform: rotate(-45deg);
+        }
+        .menu-content {
+            display: none;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-top: 1rem;
+            position: absolute; /* Agregado para asegurar que el menú esté posicionado cerca del botón */
+        }
+        .menu-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu-content a:hover {
+            background-color: #f1f1f1;
+        }
+        button.open + .menu-content {
+            display: block;
+        }
+    </style>
+    <button id="menuButton">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    <div class="menu-content" id="menuContent">
+        <a href="https://www.mozilla.org/en-US/firefox/new">Pagina principal</a>
+        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Contenido</a>
+        <a href="https://concepto.de/">Concepto</a>
+	<a href="https://www.microsoft.com/es-ec/?msockid=10587c08b6846e2a0f4a6f54b7266f28">Información</a>
+    </div>
+
+    <script>
+        const button = document.getElementById('menuButton');
+        const menuContent = document.getElementById('menuContent');
+
+        button.addEventListener('click', () => {
+            button.classList.toggle('open');
+            menuContent.classList.toggle('open');
+        });
+    </script>
+  </header>
+</center>
+
+<center>
+  <table width="950"><tr><td>
+    <tbody>
+      <tr>
+	<td>
+	  <center>
+	     <p style="color: #1E709E;">
+		<a href="index.html">
+		  <img src="C:\Users\FALCONI PC5\Pictures\Saved Pictures/-......jfif" style="width: 100px; height: 100px;" title="Inicio" accesskey="f" id="searchInput">
+		</a> 
+		_
+		<a href="servicios.html">
+		  <image src="C:\Users\FALCONI PC5\Pictures\Saved Pictures/imagen bonit5a.jfif"style="width: 150px; height: 100px;"title="Servicio" accesskey="f" id="searchInput">
+		</a> 
+		_
+		<a href="contactanos.html">
+		  <image src="C:\Users\FALCONI PC5\Pictures\Saved Pictures/CIUDAD LINDA.jfif"style="width: 100px; height: 100px;" title="Contactanos" accesskey="f" id="searchInput">
+		</a>
+	      </p>
+	    </center>
+	    <h1>Hoja de Estilo</h1>
+	    <section id="layout-38047-1" class="section fw layout--search">
+	    <div class="lazyload bg-image large" data-bg="https://concepto.de/wp-content/uploads/2021/08/home-bg-1.jpg" style="background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20500%20300%22%3E%3C/svg%3E)"></div>	
+	      <div class="container">
+		<div class="section-header">
+		  <h2 class="headline section-title big">
+		    Una página online más viva, más simple y más confiable
+		  </h2>
+		  <div class="content ">
+		     Aquí puedes buscar y encontrar lo que sea sin importar qué!
+		  </div>
+		</div>
+		<form class="searchform big" method="get" action="https://concepto.de/">
+		  <div class="search-field-wrapper">
+		    <span class="icon icon-search"></span>
+		    <center>
+		      <p>
+			Buscar
+			<input type="search" class="search-field" name="s" placeholder="¿Qué estás buscando?"value="" autocapitalize="sentences" title="Buscar en este wiki" accesskey="f" id="searchInput">
+			<input type="submit" value="Buscar"></div>
+		      </p>
+		    </center>
+		  </div>
+		</form>
+	      </div>
+	    </section>
+	    <section class="wrapper">
+	      <section class="main">
+		<article>
+		  <font face="rage italic">
+		    <h2 style="color: purple"> Como hacer una Página Web con Hojas de Estilo</h2>
+		  </font>
+		  <p>¡Bienvenidos!</p>
+		  <p>
+		  Podemos cargar imagenes, aplicar otros estilos. Existe un menu con enlaces, pero aun no estan activados
+		  </p>
+		  <p>
+Para poder hacer una PAGINA con hojas de Estilo necesitas saber qué son las hojas de estilo. Las hojas de estilo son archivos que acompañan al archivo principal de cualquier página web, con la extensión css, y se encargan de definir diferentes aspectos relacionados con el formato y el diseño de la web. En la página web se escriben las etiquetas que definen categorías o elementos, y en la hoja de estilo se escribe cómo queremos que sea el estilo de presentación de las etiquetas. Las hojas de estilo permiten definir el aspecto visual de los elementos de una página web, como el color, la fuente, el tamaño, el espaciado, entre otros. CSS se utiliza para darle estilo y diseño a las páginas Web.
+		  </p>
+		  <p>
+Una página web es un documento de la World Wide Web «con dirección propia».​ Las páginas web son entregadas por un servidor web al usuario y mostradas en un navegador web para que actúe como «unidad de recuperación» de la información almacenada en su interior.​ Un sitio web está formado por muchas páginas web enlazadas.
+		  </p>
+		  <p>HTML tiene muchos casos de uso, como:</p>
+		  <p>
+		    <font face="arial black">-Desarrollo web:</font>
+los desarrolladores utilizan código HTML para diseñar el modo en que un navegador muestra los elementos de una página web, como texto, hipervínculos y archivos multimedia.
+		  </p>
+		  <p>
+		  <font face="arial black">-Navegación por Internet:</font>
+los usuarios pueden navegar fácilmente e insertar enlaces entre páginas y sitios web relacionados, ya que HTML se utiliza mucho para incrustar hipervínculos.
+		  </p>
+		  <p>
+		  <font face="arial black">-Documentación web:</font>
+		  HTML permite organizar y dar formato a los documentos, de forma similar a Microsoft Word.
+		  </p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Modal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            position: relative;
+            background-color: transparent; /* Cambiado a transparente */
+            border: none; /* Eliminado el borde */
+            width: auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+<center>
+    <img id="myImage" src="file:///D:/Diego%20S.%20index.html/imagen%20index.jpg" alt="imagen" title="imagen" style="width:400px; cursor:pointer;">
+</center>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="file:///D:/Diego%20S.%20index.html/imagen%20index.jpg" alt="imagen ampliada" title="imagen">
+    </div>
+</div>
+
+<script>
+    // Obtener elementos
+    var modal = document.getElementById('myModal');
+    var img = document.getElementById('myImage');
+    var modalImg = document.querySelector('.modal-content img');
+    var span = document.querySelector('.close');
+
+    // Al hacer clic en la imagen, mostrar el modal
+    img.onclick = function() {
+        modal.style.display = 'flex';
+    }
+
+    // Al hacer clic en la "X", cerrar el modal
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // Al hacer clic en cualquier parte fuera del modal, cerrar el modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+		  <p>
+		  Ahora te mostraré un video de cómo poner un video en tu página web, solo escribe tu nombre.
+		  </p>
+		  <form method="post" action="https://www.youtube.com/watch?v=Pc5iTH7Q8Cs">
+		    <p>
+		      Nombre:
+		      <input name="nombre" placeholder="tu nombre"value="" title="escribe tu nombre" accesskey="f" id="searchInput">
+		      <input type="submit" value="Enviar">
+		    </p>
+		  </form>
+		</article>
+	      </section>
+	      <hr>
+	      <section id="articulos">
+		<h2>Artículos</h2>
+		<article>
+		  <h3>-¿Por qué index.html?</h3>
+		  <p>
+		  <font face="Britannic Bold">.html</font>
+le indica a nuestro editor de texto y posibles servidores que vayan a utilizar este archivo y entregarselo a clientes el archivo es de tipo html y el nombre de <font face="Britannic Bold">index </font>es una covencion o un estandar que se utiliza para poder crear la primera pagina web de html a la cual nosotros vamos a ingresar. Esto quiere decir que si tu vas a ingresar a una pagina web cualquiera, el archivo que te van a servir inmediatamente (el primero que te llega) es este de <font face="Britannic Bold">index.html.</font>
+		  </p>
+		  <p>
+		  En el desarrollo web, el archivo
+		  <font face="Britannic Bold">index.html</font>
+		  es importante porque los servidores web lo reconocen como la
+		  <font face="Britannic Bold">"página principal"</font>
+		  de un sitio web. Cuando alguien visita tu dominio (por ejemplo, www.tusitio.com), el servidor busca automáticamente un archivo llamado
+		  <font face="Britannic Bold">index.html</font> en el directorio raíz y lo muestra.
+		 <font face="Britannic Bold">Si no existe este archivo</font>
+		 , el servidor puede mostrar<font face="Britannic Bold">
+		  un error o una lista de archivos en el directorio</font>
+		 , lo cual no es ideal para la experiencia del usuario.
+		</p>
+	      </article>
+	    </section>
+	    <aside>
+	      <p>Ahora llene este formulario porque si.</p>
+	      <p>
+Ingrese su nombre:
+<input type="text" placeholder="tu nombre" title="ingrese su nombre">
+	      </p>
+	      <p>
+Ingrese su contraseña:
+<input type="password" placeholder="contraseña" title="ingrese su contraseña">
+	      </p>
+	      <p>
+Ingrese su email:
+<input ypt="email" placeholder="email" value="" title="ingrese su email">
+	      </p>
+	      <p>
+Escoja su género:
+	      </p>
+		<p>
+<input type="checkbox" title="escoja su genero">
+Hombre
+<input type="checkbox" title="escoja su genero">
+Mujer
+	      </p>
+	      <p>
+		<select id="row-selector" title="seleccione su pais">
+		  <option value="EE.UU">EE.UU</option>
+		  <optionvalue="Canadá">Canadá</option>
+		  <option value="Mexico">Mexico</option>
+		  <option value="colombia">Colombia</option>
+		  <option value="Perú">Perú</option>
+		  <option value="Ecuador">Ecuador</option>
+		  <option value="Venezuela">Venezuela</option>
+		  <option value="Argentina">Argentina</option>
+		  <option value="Brasil">Brasil</option>
+		  <option value="Chile">Chile</option>
+		</select>
+	      </p>
+	      <p>
+		<a href="mailto:diegosanchezam2008cafe@gmail.com" title="enviar correo" style="color: #572E75">Enviar mail
+		</a>
+	      </p>
+	      <p>
+		<input type ="submit">
+	      </p>
+	    </aside>
+	  </section>
+	    <footer>
+		<font face="elephant">
+	      <address>
+Creada el 20 de septiembre de 2024
+		<br>
+Diego Sánchez.
+		<p>
+		  © 2024 Mi Wikipedia
+		</p>
+		<a href="index.html">Inicio</a> 
+		-
+		<a href="nosotros.html">Acerca de nosotros</a> 
+		-
+		<a href="servicios.html">Servicios</a> 
+		-
+		<a href="contactanos.html">Contactanos</a>
+		<table border=2 cellspacing=3 cellsopading=1
+		width="50%">
+		   <td bgcolor="#FFFF00">Celda 1, linea 1</td>
+		   <td>Celda 2, linea 2</td>
+		</tr>
+		<td>Celda 1, linea 1</td>
+		<td>Celda 2, linea 2</td>
+		</tr>
+		</table>
+	      </address>
+		</font>
+	  </footer>
+	 </td>
+	</tr>
+       </tbody>
+      </table>
+    </center>
+  </body>
+</html>
